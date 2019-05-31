@@ -19,7 +19,20 @@ var cssPath = {
 };
 
 var jsPath = {
-  source: "./js/*.js",
+  source: "./js/jquery.js",
+  modernizr: "./js/modernizr.js",
+  bootstrap: "./js/bootstrap.bundle.js",
+  jqueryEasing: "./js/jquery.easing.1.3.js",
+  smoothScroll: "./js/smooth-scroll.js",
+  jqueryAppear: "./js/jquery.appear.js",
+  wowMin: "./js/wow.min.js",
+  swiperMin: "./js/swiper.min.js",
+  imagesloaded: "./js/imagesloaded.pkgd.min.js",
+  counter: "./js/counter.js",
+  fitvids: "./js/jquery.fitvids.js",
+  main: "./js/main.js",
+  themepunchTools: "./revolution/js/jquery.themepunch.tools.min.js",
+  themepunchRevolution: "./revolution/js/jquery.themepunch.revolution.min.js",
   dist: "./static/js"
 };
 
@@ -38,7 +51,22 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-  var js = gulp.src(jsPath.source)
+  var js = gulp.src([
+    jsPath.source,
+    jsPath.modernizr,
+    jsPath.bootstrap,
+    jsPath.jqueryEasing,
+    jsPath.smoothScroll,
+    jsPath.jqueryAppear,
+    jsPath.wowMin,
+    jsPath.swiperMin,
+    jsPath.imagesloaded,
+    jsPath.counter,
+    jsPath.fitvids,
+    jsPath.themepunchTools,
+    jsPath.themepunchRevolution,
+    jsPath.main,
+  ])
       .pipe(concat('all.min.js'))
       .pipe(uglify())
       .pipe(size({
