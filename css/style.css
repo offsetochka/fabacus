@@ -3863,7 +3863,7 @@ aside .latest-post li figure {width: 75px;}
 #aboutUs { background-color: white; background-image: none !important; }
 .fabacus-icon-b-container { text-align: center; }
 .fabacus-icon-bg {
-    background: url(../images/fabacus-icon-outline-black.svg); background-size: 100px; height: 300px; background-repeat: no-repeat;
+    background: url('../img/fabacus-icon-outline-black.svg'); background-size: 100px; height: 300px; background-repeat: no-repeat;
     background-position: center; display: inline-block; max-width: 100%; width: 100%; box-sizing: border-box; flex: 0 0 100%;
 }
 #product {
