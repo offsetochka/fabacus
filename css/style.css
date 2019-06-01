@@ -2719,7 +2719,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 .swiper-pagination-bullets .swiper-pagination-bullet {margin: 0 5px}
 .swiper-pagination-bottom .swiper-wrapper {margin: 0 0 35px 0}
 .swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper {margin: 0 0 95px 0; display: flex}
-.swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper .team-item {height: 85%}
+.swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper .team-item {height: 85%; flex-direction: column; display: flex;}
 .swiper-slider-second {text-align: center;}
 
 /* swiper bottom scrollbar full */
@@ -3816,24 +3816,24 @@ aside .latest-post li figure {width: 75px;}
 }
 
 .product-item h5{
-    color: #A30404
+    color: #550459
 }
 
 .product-item:hover .text-medium-gray{
-    color: #A30404;
+    color: #550459;
     cursor: pointer;
 }
 
 .product-item .bg-deep-pink{
-    background: #A30404;
+    background: #550459;
 }
 
 .product-box.feature-box:hover:before, .product-box.feature-box:hover:after{
-    background: #A30404;
+    background: #550459;
 }
 
 .product-box.feature-box:hover .content:before, .product-box.feature-box:hover .content:after{
-    background: #A30404;
+    background: #550459;
 }
 
 /* services modern */

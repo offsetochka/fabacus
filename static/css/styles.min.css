@@ -10875,7 +10875,7 @@ header.sticky nav.navbar.brand-center ul.nav>li>a{padding:20px;margin:0 20px}
 .swiper-pagination-bullets .swiper-pagination-bullet{margin:0 5px}
 .swiper-pagination-bottom .swiper-wrapper{margin:0 0 35px}
 .swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper{margin:0 0 95px;display:flex}
-.swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper .team-item{height:85%}
+.swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper .team-item{height:85%;flex-direction:column;display:flex}
 .swiper-slider-second{text-align:center}
 .swiper-bottom-scrollbar-full.swiper-container{height:100%;margin:0 auto;overflow:hidden;position:absolute;top:0;transition:all .3s ease-in-out .7s;-webkit-transition:all .3s ease-in-out .7s;-moz-transition:all .3s ease-in-out .7s;-ms-transition:all .3s ease-in-out .7s;-o-transition:all .3s ease-in-out .7s;width:100%}
 .swiper-bottom-scrollbar-full .swiper-scrollbar-drag{border-radius:0;background:#ff214f}
@@ -11605,9 +11605,9 @@ aside .latest-post li figure{width:75px}
 .parallax-title{padding:16px 35px;display:inline-block}
 .highlight-bg-text{padding:5px 16px;display:inline-block;margin-bottom:15px}
 .btn.btn-white.custom-lima-btn:hover{background:#000;color:#fff}
-.product-item h5{color:#A30404}
-.product-item:hover .text-medium-gray{color:#A30404;cursor:pointer}
-.product-box.feature-box:hover .content:after,.product-box.feature-box:hover .content:before,.product-box.feature-box:hover:after,.product-box.feature-box:hover:before,.product-item .bg-deep-pink{background:#A30404}
+.product-item h5{color:#550459}
+.product-item:hover .text-medium-gray{color:#550459;cursor:pointer}
+.product-box.feature-box:hover .content:after,.product-box.feature-box:hover .content:before,.product-box.feature-box:hover:after,.product-box.feature-box:hover:before,.product-item .bg-deep-pink{background:#550459}
 .arrow-bottom{position:relative}
 .arrow-bottom:after{top:100%;border:solid transparent;position:absolute;border-color:rgba(245,245,245,0);border-top-color:#f5f5f5;border-width:15px}
 .arrow-top{position:relative}
