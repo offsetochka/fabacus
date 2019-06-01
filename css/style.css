@@ -3815,21 +3815,25 @@ aside .latest-post li figure {width: 75px;}
     color: white;
 }
 
-.logo-wrapper{
-    position: relative;
+.product-item h5{
+    color: #A30404
 }
 
-.logo-wrapper:before{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    display: block;
-    background: red;
-    content: '';
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: 1px;
-    box-shadow: 0px 0px 25px 0px rgba(255,0,0,1);
+.product-item:hover .text-medium-gray{
+    color: #A30404;
+    cursor: pointer;
+}
+
+.product-item .bg-deep-pink{
+    background: #A30404;
+}
+
+.product-box.feature-box:hover:before, .product-box.feature-box:hover:after{
+    background: #A30404;
+}
+
+.product-box.feature-box:hover .content:before, .product-box.feature-box:hover .content:after{
+    background: #A30404;
 }
 
 /* services modern */
