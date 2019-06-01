@@ -3816,24 +3816,24 @@ aside .latest-post li figure {width: 75px;}
 }
 
 .product-item h5{
-    color: #550459
+    color: #6A0475
 }
 
 .product-item:hover .text-medium-gray{
-    color: #550459;
+    color: #6A0475;
     cursor: pointer;
 }
 
 .product-item .bg-deep-pink{
-    background: #550459;
+    background: #6A0475;
 }
 
 .product-box.feature-box:hover:before, .product-box.feature-box:hover:after{
-    background: #550459;
+    background: #6A0475;
 }
 
 .product-box.feature-box:hover .content:before, .product-box.feature-box:hover .content:after{
-    background: #550459;
+    background: #6A0475;
 }
 
 /* services modern */
