@@ -273,6 +273,11 @@ $(document).ready(function () {
             $(this).parents('li.dropdown').addClass("active");
         }
     });
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        var link = $(this).attr("href")
+        $("html, body").animate({ scrollTop: $(link).offset().top }, 800);
+    });
     $(window).scroll(function () {
         if ($(this).scrollTop() > 150)
             $('.scroll-top-arrow').fadeIn('slow');
