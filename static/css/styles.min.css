@@ -7,8 +7,8 @@
  * Copyright (c) 2018 Daniel Eden
  */
 .animated,.mfp-figure{-webkit-animation-fill-mode:both}
-legend,nav.navbar.bootsnav ul.nav ul.dropdown-menu>li>a{white-space:normal}
 img,nav.navbar.bootsnav .share ul>li>a,svg{vertical-align:middle}
+legend,nav.navbar.bootsnav ul.nav ul.dropdown-menu>li>a{white-space:normal}
 .mfp-arrow,.rev-burger,html{-webkit-tap-highlight-color:transparent}
 @-webkit-keyframes bounce{0%,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translateZ(0);animation-timing-function:cubic-bezier(.215,.61,.355,1);transform:translateZ(0)}
 40%,43%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);animation-timing-function:cubic-bezier(.755,.05,.855,.06);transform:translate3d(0,-30px,0)}
@@ -11601,13 +11601,12 @@ aside .latest-post li figure{width:75px}
 .rev-slider .tp-bullet{width:35px;height:3px;background-color:#fff;opacity:.5;border-radius:0;padding:0 4px}
 .rev-slider .tp-bullet.selected,.tp-bullet:hover{opacity:1}
 .text-bold-underline:before{background-color:#ff214f;height:3px;width:100%;position:absolute;right:0;bottom:5px;content:""}
-.arrow-bottom:after,.arrow-top:after{left:50%;content:" ";height:0;width:0;margin-left:-15px;z-index:9;pointer-events:none}
 .parallax-title{padding:16px 35px;display:inline-block}
 .highlight-bg-text{padding:5px 16px;display:inline-block;margin-bottom:15px}
 .btn.btn-white.custom-lima-btn:hover{background:#000;color:#fff}
-.product-item h5{color:#6A0475}
-.product-item:hover .text-medium-gray{color:#6A0475;cursor:pointer}
-.product-box.feature-box:hover .content:after,.product-box.feature-box:hover .content:before,.product-box.feature-box:hover:after,.product-box.feature-box:hover:before,.product-item .bg-deep-pink{background:#6A0475}
+.product-box.feature-box .content:after,.product-box.feature-box .content:before,.product-box.feature-box:after,.product-box.feature-box:before,.product-box.feature-box:hover .content:after,.product-box.feature-box:hover .content:before,.product-box.feature-box:hover:after,.product-box.feature-box:hover:before,.product-item .bg-deep-pink{background:#6A0475}
+.product-box.feature-box{height:100%}
+.arrow-bottom:after,.arrow-top:after{left:50%;content:" ";height:0;width:0;margin-left:-15px;z-index:9;pointer-events:none}
 .arrow-bottom{position:relative}
 .arrow-bottom:after{top:100%;border:solid transparent;position:absolute;border-color:rgba(245,245,245,0);border-top-color:#f5f5f5;border-width:15px}
 .arrow-top{position:relative}

@@ -3815,16 +3815,21 @@ aside .latest-post li figure {width: 75px;}
     color: white;
 }
 
-.product-item h5{
-    color: #6A0475
-}
 
-.product-item:hover .text-medium-gray{
-    color: #6A0475;
-    cursor: pointer;
-}
 
 .product-item .bg-deep-pink{
+    background: #6A0475;
+}
+
+.product-box.feature-box{
+    height: 100%;
+}
+
+.product-box.feature-box:before, .product-box.feature-box:after{
+    background: #6A0475;
+}
+
+.product-box.feature-box .content:before, .product-box.feature-box .content:after{
     background: #6A0475;
 }
 
