@@ -2718,7 +2718,8 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 .swiper-pagination-bullet {height: 9px; width: 9px}
 .swiper-pagination-bullets .swiper-pagination-bullet {margin: 0 5px}
 .swiper-pagination-bottom .swiper-wrapper {margin: 0 0 35px 0}
-.swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper {margin: 0 0 95px 0}
+.swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper {margin: 0 0 95px 0; display: flex}
+.swiper-pagination-bottom.swiper-container-horizontal .swiper-wrapper .team-item {height: 85%}
 .swiper-slider-second {text-align: center;}
 
 /* swiper bottom scrollbar full */
@@ -3808,6 +3809,12 @@ aside .latest-post li figure {width: 75px;}
    Others
 ====================================== */
 
+/* custom styles */
+.btn.btn-white.custom-lima-btn:hover{
+    background: #000;
+    color: white;
+}
+
 /* services modern */
 .arrow-bottom{position: relative;}
 .arrow-bottom:after {top: 100%;	left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(245, 245, 245, 0); border-top-color: #f5f5f5; border-width: 15px; margin-left: -15px; z-index: 9;}
@@ -3866,7 +3873,7 @@ aside .latest-post li figure {width: 75px;}
     background: url('../img/fabacus-icon-outline-black.svg'); background-size: 100px; height: 300px; background-repeat: no-repeat;
     background-position: center; display: inline-block; max-width: 100%; width: 100%; box-sizing: border-box; flex: 0 0 100%;
 }
-#product {
+/* #product {
     background-image:
     linear-gradient(
       to bottom,
@@ -3876,7 +3883,7 @@ aside .latest-post li figure {width: 75px;}
       #19f0d6,
       white
     );
-}
+} */
 #product .logo-dark { width: 400px; margin-bottom: 50px; }
 
 img.project-icon { background-color: #19f0d6; }

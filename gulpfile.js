@@ -41,6 +41,11 @@ var imagesPath = {
   dist: "./static/img"
 };
 
+var fontsPath = {
+  source: "./fonts/*",
+  dist: "./static/fonts"
+};
+
 gulp.task('styles', function() {
   return gulp.src([cssPath.sourceMain, cssPath.sourceRevolution])
     .pipe(concat('styles.min.css'))
@@ -75,6 +80,13 @@ gulp.task('scripts', function() {
       .pipe(gulp.dest(jsPath.dist))
 });
 
+gulp.task("fonts:blink", function() {
+  return gulp
+    .src(fontsPath.source)
+    .pipe(gulp.dest(fontsPath.dist))
+});
+
+
 
 gulp.task('images', function () {
   return gulp.src(imagesPath.source)
@@ -102,10 +114,11 @@ gulp.task("browser-sync", function() {
 
 gulp.task(
   "watch",
-  ["browser-sync", "styles", "scripts", "images"],
+  ["browser-sync", "styles", "scripts", "fonts:blink", "images"],
   function() {
     gulp.watch(cssPath.watch, ["styles"]);
     gulp.watch(jsPath.source, ["scripts"]);
+    gulp.watch(fontsPath.source, ["fonts:blink"]);
     gulp.watch(imagesPath.source, ["images"]);
   }
 );
