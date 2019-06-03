@@ -3818,7 +3818,7 @@ aside .latest-post li figure {width: 75px;}
 
 
 .product-item .bg-deep-pink{
-    background: #6A0475;
+    background: white;
 }
 
 .product-box.feature-box{
@@ -3826,19 +3826,19 @@ aside .latest-post li figure {width: 75px;}
 }
 
 .product-box.feature-box:before, .product-box.feature-box:after{
-    background: #6A0475;
+    background: white;
 }
 
 .product-box.feature-box .content:before, .product-box.feature-box .content:after{
-    background: #6A0475;
+    background: white;
 }
 
 .product-box.feature-box:hover:before, .product-box.feature-box:hover:after{
-    background: #6A0475;
+    background: white;
 }
 
 .product-box.feature-box:hover .content:before, .product-box.feature-box:hover .content:after{
-    background: #6A0475;
+    background: white;
 }
 
 /* services modern */
