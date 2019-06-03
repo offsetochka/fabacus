@@ -1,15 +1,17 @@
 var gulp = require('gulp'),
-browserSync = require("browser-sync"),
-	cache = require('gulp-cache'),
-	clean = require('gulp-clean'),
-	stream = require('event-stream'),
-	size = require('gulp-size'),
-	jshint = require('gulp-jshint'),
-	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
-	minifyCSS = require('gulp-minify-css'),
+  browserSync = require("browser-sync"),
+  clean = require('gulp-clean'),
+  stream = require('event-stream'),
+  size = require('gulp-size'),
+  jshint = require('gulp-jshint'),
+  concat = require('gulp-concat'),
+  uglify = require('gulp-uglify'),
+  minifyCSS = require('gulp-minify-css'),
   rename = require('gulp-rename'),
-	imagemin = require('gulp-imagemin');
+  imagemin = require('gulp-imagemin'),
+  pngquant = require('imagemin-pngquant'),
+  cache = require('gulp-cache'),
+  purgecss = require('gulp-purgecss');
 
 var cssPath = {
   sourceMain: "./css/*.css",
@@ -46,16 +48,19 @@ var fontsPath = {
   dist: "./static/fonts"
 };
 
-gulp.task('styles', function() {
+gulp.task('styles', function () {
   return gulp.src([cssPath.sourceMain, cssPath.sourceRevolution])
     .pipe(concat('styles.min.css'))
-      .pipe(minifyCSS({
-          keepBreaks: true
-      }))
-      .pipe(gulp.dest(cssPath.dist));
+    .pipe(minifyCSS({
+      keepBreaks: true
+    }))
+    // .pipe(purgecss({
+    //   content: './index.html'
+    // }))
+    .pipe(gulp.dest(cssPath.dist));
 });
 
-gulp.task('scripts', function() {
+gulp.task('scripts', function () {
   var js = gulp.src([
     jsPath.source,
     jsPath.modernizr,
@@ -72,15 +77,15 @@ gulp.task('scripts', function() {
     jsPath.themepunchRevolution,
     jsPath.main,
   ])
-      .pipe(concat('all.min.js'))
-      .pipe(uglify())
-      .pipe(size({
-        title: 'size of custom js'
-      }))
-      .pipe(gulp.dest(jsPath.dist))
+    .pipe(concat('all.min.js'))
+    .pipe(uglify())
+    .pipe(size({
+      title: 'size of custom js'
+    }))
+    .pipe(gulp.dest(jsPath.dist))
 });
 
-gulp.task("fonts:blink", function() {
+gulp.task("fonts:blink", function () {
   return gulp
     .src(fontsPath.source)
     .pipe(gulp.dest(fontsPath.dist))
@@ -90,18 +95,20 @@ gulp.task("fonts:blink", function() {
 
 gulp.task('images', function () {
   return gulp.src(imagesPath.source)
-      .pipe(cache(imagemin({
-        optimizationLevel: 5,
-          progressive: true,
-          interlaced: true
-      })))
-      .pipe(size({
-        title: 'size of images'
-      }))
-      .pipe(gulp.dest(imagesPath.dist));
+    .pipe(cache(imagemin({
+      optimizationLevel: 5,
+      progressive: true,
+      interlaced: true,
+      svgoPlugins: [{ removeViewBox: false }],
+      use: [pngquant()]
+    })))
+    .pipe(size({
+      title: 'size of images'
+    }))
+    .pipe(gulp.dest(imagesPath.dist));
 });
 
-gulp.task("browser-sync", function() {
+gulp.task("browser-sync", function () {
   browserSync.init({
     server: {
       baseDir: "./"
@@ -115,7 +122,7 @@ gulp.task("browser-sync", function() {
 gulp.task(
   "watch",
   ["browser-sync", "styles", "scripts", "fonts:blink", "images"],
-  function() {
+  function () {
     gulp.watch(cssPath.watch, ["styles"]);
     gulp.watch(jsPath.source, ["scripts"]);
     gulp.watch(fontsPath.source, ["fonts:blink"]);
