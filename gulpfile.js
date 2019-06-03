@@ -39,7 +39,7 @@ var jsPath = {
 };
 
 var imagesPath = {
-  source: "./images/*",
+  source: "./images/**/*",
   dist: "./static/img"
 };
 
