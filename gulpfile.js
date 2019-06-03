@@ -35,6 +35,7 @@ var jsPath = {
   main: "./js/main.js",
   themepunchTools: "./revolution/js/jquery.themepunch.tools.min.js",
   themepunchRevolution: "./revolution/js/jquery.themepunch.revolution.min.js",
+  recliner: "./js/recliner.min.js",
   dist: "./static/js"
 };
 
@@ -75,6 +76,7 @@ gulp.task('scripts', function () {
     jsPath.fitvids,
     jsPath.themepunchTools,
     jsPath.themepunchRevolution,
+    jsPath.recliner,
     jsPath.main,
   ])
     .pipe(concat('all.min.js'))
