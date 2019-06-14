@@ -3821,19 +3821,11 @@ aside .latest-post li figure {width: 75px;}
     margin: 0 0 30px;
 }
 
-.video-description{
-    padding: 0 20px;
-    max-width: 600px;
-    font-size: 25px;
-    margin: 0 auto 30px;
-    line-height: 30px;
-}
-
-.video-description .video-link{
+.video-link{
     color: #007aff;
 }
 
-.video-description .video-link:hover{
+.video-link:hover{
     opacity: .6;
 }
 
