@@ -3824,6 +3824,9 @@ aside .latest-post li figure {width: 75px;}
 .video-link{
     color: #007aff;
 }
+.link-text{
+    font-size: 24px;
+}
 
 .video-link:hover{
     opacity: .6;
