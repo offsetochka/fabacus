@@ -11601,15 +11601,16 @@ aside .latest-post li figure{width:75px}
 .rev-slider .tp-bullet{width:35px;height:3px;background-color:#fff;opacity:.5;border-radius:0;padding:0 4px}
 .rev-slider .tp-bullet.selected,.tp-bullet:hover{opacity:1}
 .text-bold-underline:before{background-color:#ff214f;height:3px;width:100%;position:absolute;right:0;bottom:5px;content:""}
+.lima-video,.product-box.feature-box{height:100%}
 .parallax-title{padding:16px 35px;display:inline-block}
 .highlight-bg-text{padding:5px 16px;display:inline-block;margin-bottom:15px}
 .btn.btn-white.custom-lima-btn:hover{background:#000;color:#fff}
 .buy-theme,.product-box.feature-box .content:after,.product-box.feature-box .content:before,.product-box.feature-box:after,.product-box.feature-box:before,.product-box.feature-box:hover .content:after,.product-box.feature-box:hover .content:before,.product-box.feature-box:hover:after,.product-box.feature-box:hover:before,.product-item .bg-deep-pink{background:#fff}
-.lima-video{box-shadow:0 2px 25px rgba(0,0,0,.07),0 1px 5px rgba(0,0,0,.02);margin:0 0 30px}
+.lima-video-container{box-shadow:0 2px 25px rgba(0,0,0,.07),0 1px 5px rgba(0,0,0,.02);position:relative;overflow:hidden;padding-top:56.25%;margin:0 0 30px}
+.lima-video{position:absolute;top:0;left:0;width:100%;border:0}
 .video-link{color:#007aff}
 .link-text{font-size:24px}
 .video-link:hover{opacity:.6}
-.product-box.feature-box{height:100%}
 .arrow-bottom:after,.arrow-top:after{left:50%;content:" ";height:0;width:0;margin-left:-15px;z-index:9;pointer-events:none}
 .arrow-bottom{position:relative}
 .arrow-bottom:after{top:100%;border:solid transparent;position:absolute;border-color:rgba(245,245,245,0);border-top-color:#f5f5f5;border-width:15px}
