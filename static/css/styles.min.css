@@ -8627,6 +8627,7 @@ aside .latest-post li{padding:10px 0}
 }
 @media (min-width:1200px){.container{max-width:1170px}
 }
+@font-face{font-family:Roboto;font-style:normal;font-display:swap;font-weight:400;src:url(../fonts/roboto-v19-latin-regular.eot);src:local('Roboto'),local('Roboto-Regular'),url(../fonts/roboto-v19-latin-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/roboto-v19-latin-regular.woff2) format('woff2'),url(../fonts/roboto-v19-latin-regular.woff) format('woff'),url(../fonts/roboto-v19-latin-regular.ttf) format('truetype'),url(../fonts/roboto-v19-latin-regular.svg#Roboto) format('svg')}
 html{font-size:15px}
 body{font-family:Roboto,sans-serif;font-smoothing:antialiased;font-size:14px;color:#6f6f6f;font-weight:400;line-height:24px}
 body,html{height:100%;-moz-osx-font-smoothing:grayscale}
