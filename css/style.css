@@ -3867,6 +3867,63 @@ aside .latest-post li figure {width: 75px;}
     background: white;
 }
 
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.youtube img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+.youtube .play-button {
+    width: 68px;
+    height: 48px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 13px 0 13px 23px;
+    border-color: transparent transparent transparent #fff;
+}
+.youtube .play-button:hover {
+    background-color: #ff1010;
+    box-shadow: none;
+    opacity: 1;
+}
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 /* services modern */
 .arrow-bottom{position: relative;}
 .arrow-bottom:after {top: 100%;	left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(245, 245, 245, 0); border-top-color: #f5f5f5; border-width: 15px; margin-left: -15px; z-index: 9;}
