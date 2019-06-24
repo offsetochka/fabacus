@@ -6289,8 +6289,8 @@ header.sticky nav.navbar.brand-center ul.nav>li>a{padding:20px;margin:0 20px}
 .swiper-pagination-white .swiper-pagination-bullet,.swiper-pagination-white .swiper-pagination-bullet-active{background:#fff}
 .swiper-pagination-square-bottom.swiper-pagination-bullets{bottom:-50px}
 .swiper-pagination-square .swiper-pagination-bullet{height:3px;width:30px;border-radius:0}
-.white-move .swiper-slide{cursor:url(../static/img/icon-move-light.png),move}
-.black-move .swiper-slide{cursor:url(../static/img/icon-move-black.png),move}
+.white-move .swiper-slide{cursor:url(../img/icon-move-light.png),move}
+.black-move .swiper-slide{cursor:url(../img/icon-move-black.png),move}
 .swiper-number .swiper-pagination-bullet.swiper-pagination-bullet-active{border-bottom:1px solid rgba(0,0,0,.5);opacity:1}
 .swiper-number .swiper-pagination-bullet-active{color:#000;background:0 0}
 .tp-bullet{border-radius:100%;background:0 0;border:1px solid #fff}

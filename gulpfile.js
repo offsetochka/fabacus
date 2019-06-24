@@ -12,7 +12,8 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'),
     purgecss = require('gulp-purgecss'),
-    cleanCSS = require('gulp-clean-css');
+    procss = require('gulp-progressive-css');
+cleanCSS = require('gulp-clean-css');
 
 var cssPath = {
     sourceMain: "./css/*.css",
@@ -89,11 +90,11 @@ gulp.task('scripts', function() {
             jsPath.bootstrap,
             jsPath.jqueryEasing,
             jsPath.smoothScroll,
-            jsPath.jqueryAppear,
+            // jsPath.jqueryAppear,
             jsPath.wowMin,
             jsPath.swiperMin,
-            jsPath.imagesloaded,
-            jsPath.counter,
+            // jsPath.imagesloaded,
+            // jsPath.counter,
             // jsPath.fitvids,
             jsPath.themepunchTools,
             jsPath.themepunchRevolution,
