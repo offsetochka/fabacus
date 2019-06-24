@@ -60,17 +60,17 @@ var fontsPath = {
 
 gulp.task('styles', function() {
     return gulp.src([
-            // cssPath.animate,
-            // cssPath.bootstrapMin,
-            // cssPath.revolutionSettings,
-            // cssPath.revolutionLayers,
-            // cssPath.revolutionNavigation,
+            cssPath.animate,
+            cssPath.bootstrapMin,
+            cssPath.revolutionSettings,
+            cssPath.revolutionLayers,
+            cssPath.revolutionNavigation,
             cssPath.bootsNav,
             cssPath.style,
             cssPath.responsive
         ])
         .pipe(concat('styles.min.css'))
-        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        // .pipe(cleanCSS({ compatibility: 'ie8' }))
         // .pipe(purgecss({
         //     content: './index.html'
         // }))
@@ -93,7 +93,7 @@ gulp.task('scripts', function() {
             // jsPath.jqueryAppear,
             jsPath.wowMin,
             jsPath.swiperMin,
-            // jsPath.imagesloaded,
+            jsPath.imagesloaded,
             // jsPath.counter,
             // jsPath.fitvids,
             jsPath.themepunchTools,

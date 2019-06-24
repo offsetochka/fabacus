@@ -230,28 +230,28 @@ function validationSearchForm() {
 /*==============================================================
  full screen START CODE
  ==============================================================*/
-// function fullScreenHeight() {
-//     var element = $(".full-screen");
-//     var $minheight = $(window).height();
-//     element.parents('section').imagesLoaded(function() {
-//         if ($(".top-space .full-screen").length > 0) {
-//             var $headerheight = $("header nav.navbar").outerHeight();
-//             $(".top-space .full-screen").css('min-height', $minheight - $headerheight);
-//         } else {
-//             element.css('min-height', $minheight);
-//         }
-//     });
+function fullScreenHeight() {
+    var element = $(".full-screen");
+    var $minheight = $(window).height();
+    element.parents('section').imagesLoaded(function() {
+        if ($(".top-space .full-screen").length > 0) {
+            var $headerheight = $("header nav.navbar").outerHeight();
+            $(".top-space .full-screen").css('min-height', $minheight - $headerheight);
+        } else {
+            element.css('min-height', $minheight);
+        }
+    });
 
-//     var minwidth = $(window).width();
-//     $(".full-screen-width").css('min-width', minwidth);
+    var minwidth = $(window).width();
+    $(".full-screen-width").css('min-width', minwidth);
 
-//     var sidebarNavHeight = $('.sidebar-nav-style-1').height() - $('.logo-holder').parent().height() - $('.footer-holder').parent().height() - 10;
-//     $(".sidebar-nav-style-1 .nav").css('height', (sidebarNavHeight));
-//     var style2NavHeight = parseInt($('.sidebar-part2').height() - parseInt($('.sidebar-part2 .sidebar-middle').css('padding-top')) - parseInt($('.sidebar-part2 .sidebar-middle').css('padding-bottom')) - parseInt($(".sidebar-part2 .sidebar-middle .sidebar-middle-menu .nav").css('margin-bottom')));
-//     $(".sidebar-part2 .sidebar-middle .sidebar-middle-menu .nav").css('height', (style2NavHeight));
+    var sidebarNavHeight = $('.sidebar-nav-style-1').height() - $('.logo-holder').parent().height() - $('.footer-holder').parent().height() - 10;
+    $(".sidebar-nav-style-1 .nav").css('height', (sidebarNavHeight));
+    var style2NavHeight = parseInt($('.sidebar-part2').height() - parseInt($('.sidebar-part2 .sidebar-middle').css('padding-top')) - parseInt($('.sidebar-part2 .sidebar-middle').css('padding-bottom')) - parseInt($(".sidebar-part2 .sidebar-middle .sidebar-middle-menu .nav").css('margin-bottom')));
+    $(".sidebar-part2 .sidebar-middle .sidebar-middle-menu .nav").css('height', (style2NavHeight));
 
 
-// }
+}
 
 function SetResizeContent() {
     //    all function call
