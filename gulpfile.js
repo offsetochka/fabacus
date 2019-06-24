@@ -94,7 +94,7 @@ gulp.task('scripts', function() {
             jsPath.swiperMin,
             jsPath.imagesloaded,
             jsPath.counter,
-            jsPath.fitvids,
+            // jsPath.fitvids,
             jsPath.themepunchTools,
             jsPath.themepunchRevolution,
             jsPath.recliner,

@@ -12879,11 +12879,11 @@ header.sticky nav.navbar.brand-center ul.nav>li>a {
 /* square pagination */
 
 .white-move .swiper-slide {
-    cursor: url("../static/img/icon-move-light.png"), move;
+    cursor: url("../img/icon-move-light.png"), move;
 }
 
 .black-move .swiper-slide {
-    cursor: url("../static/img/icon-move-black.png"), move;
+    cursor: url("../img/icon-move-black.png"), move;
 }
 
 
@@ -18136,7 +18136,7 @@ aside .latest-post li figure {
 }
 
 .fabacus-icon-bg {
-    background: url('../static/img/fabacus-icon-outline-black.svg');
+    background: url('../img/fabacus-icon-outline-black.svg');
     background-size: 100px;
     height: 300px;
     background-repeat: no-repeat;
