@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     browserSync = require("browser-sync"),
+    cache = require('gulp-cache'),
     clean = require('gulp-clean'),
     stream = require('event-stream'),
     size = require('gulp-size'),
@@ -8,24 +9,11 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     minifyCSS = require('gulp-minify-css'),
     rename = require('gulp-rename'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
-    cache = require('gulp-cache'),
-    purgecss = require('gulp-purgecss'),
-    procss = require('gulp-progressive-css');
-cleanCSS = require('gulp-clean-css');
+    imagemin = require('gulp-imagemin');
 
 var cssPath = {
     sourceMain: "./css/*.css",
-    animate: "./css/animate.css",
-    bootstrapMin: "./css/bootstrap.min.css",
-    fontAwesome: "./css/font-awesome.min.css",
-    revolutionSettings: "./revolution/css/settings.css",
-    revolutionLayers: "./revolution/css/layers.css",
-    revolutionNavigation: "./revolution/css/navigation.css",
-    bootsNav: "./css/bootsnav.css",
-    style: "./css/style.css",
-    responsive: "./css/responsive.css",
+    sourceRevolution: "./revolution/css/*.css",
     dist: "./static/css",
     watch: "./css/*.css"
 };
@@ -50,7 +38,7 @@ var jsPath = {
 };
 
 var imagesPath = {
-    source: "./images/**/*",
+    source: "./images/*",
     dist: "./static/img"
 };
 
@@ -60,28 +48,11 @@ var fontsPath = {
 };
 
 gulp.task('styles', function() {
-    return gulp.src([
-            cssPath.animate,
-            cssPath.bootstrapMin,
-            cssPath.fontAwesome,
-            cssPath.revolutionSettings,
-            cssPath.revolutionLayers,
-            cssPath.revolutionNavigation,
-            cssPath.bootsNav,
-            cssPath.style,
-            cssPath.responsive
-        ])
+    return gulp.src([cssPath.sourceMain, cssPath.sourceRevolution])
         .pipe(concat('styles.min.css'))
-        // .pipe(cleanCSS({ compatibility: 'ie8' }))
-        // .pipe(purgecss({
-        //     content: './index.html'
-        // }))
         .pipe(minifyCSS({
             keepBreaks: true
         }))
-        // .pipe(purgecss({
-        //   content: './index.html'
-        // }))
         .pipe(gulp.dest(cssPath.dist));
 });
 
@@ -92,12 +63,12 @@ gulp.task('scripts', function() {
             jsPath.bootstrap,
             jsPath.jqueryEasing,
             jsPath.smoothScroll,
-            // jsPath.jqueryAppear,
+            jsPath.jqueryAppear,
             jsPath.wowMin,
             jsPath.swiperMin,
             jsPath.imagesloaded,
-            // jsPath.counter,
-            // jsPath.fitvids,
+            jsPath.counter,
+            jsPath.fitvids,
             jsPath.themepunchTools,
             jsPath.themepunchRevolution,
             jsPath.recliner,
@@ -124,9 +95,7 @@ gulp.task('images', function() {
         .pipe(cache(imagemin({
             optimizationLevel: 5,
             progressive: true,
-            interlaced: true,
-            svgoPlugins: [{ removeViewBox: false }],
-            use: [pngquant()]
+            interlaced: true
         })))
         .pipe(size({
             title: 'size of images'
