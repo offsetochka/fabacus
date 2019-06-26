@@ -19,6 +19,7 @@ var cssPath = {
     sourceMain: "./css/*.css",
     animate: "./css/animate.css",
     bootstrapMin: "./css/bootstrap.min.css",
+    fontAwesome: "./css/font-awesome.min.css",
     revolutionSettings: "./revolution/css/settings.css",
     revolutionLayers: "./revolution/css/layers.css",
     revolutionNavigation: "./revolution/css/navigation.css",
@@ -62,6 +63,7 @@ gulp.task('styles', function() {
     return gulp.src([
             cssPath.animate,
             cssPath.bootstrapMin,
+            cssPath.fontAwesome,
             cssPath.revolutionSettings,
             cssPath.revolutionLayers,
             cssPath.revolutionNavigation,

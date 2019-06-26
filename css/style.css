@@ -17718,6 +17718,10 @@ aside .latest-post li figure {
 
 /* custom styles */
 
+.scroll-top-arrow svg {
+    max-width: 14px;
+}
+
 .btn.btn-white.custom-lima-btn:hover {
     background: #000;
     color: white;
