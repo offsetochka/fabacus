@@ -11,7 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "event-stream": "^4.0.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cache": "^1.1.1",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.2.0",
